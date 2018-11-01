@@ -20,7 +20,7 @@ class Form extends Component {
     handleSubmit = e => {
         e.preventDefault();
         const { name, email, measurements } = this.state;
-        const profile = { name, email, message };
+        const profile = { name, email, measurements };
         const conf = {
             method: "post",
             body: JSON.stringify(profile),

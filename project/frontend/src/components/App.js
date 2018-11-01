@@ -9,6 +9,7 @@ const App = () => (
         <DataProvider endpoint="api/profile/" 
             render={data => <Table data={data} />} 
         />
+        <Form endpoint="api/profile/" />
     </React.Fragment>
 );
 

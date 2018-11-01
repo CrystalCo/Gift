@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from profiles.models import Profile
 from profiles.serializers import ProfileSerializer
 from rest_framework import generics

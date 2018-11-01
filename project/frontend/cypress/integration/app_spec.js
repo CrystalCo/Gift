@@ -1,17 +1,20 @@
+// import { isRegExp } from "util";
+
 describe("Django REST framework / React quickstart app", () => {
     const profile = {
         name: "Armin",
         email: "some-email@gmail.com",
-        message: "I am looking for a React tutor"
+        measurements: "5ft 4in"
     };
+
     before(() => {
         cy.exec("npm run dev");
         cy.exec("npm run flush");
     });
+
     it("should be able to fill a web form", () => {
         cy.visit("/");
-        // Next line tests that the user can see the table:
-        cy.get("tr").contains(`${profile.name}${profile.email}${profile.measurements}`);
+
         cy
             .get('input[name="name"]')
             .type(profile.name)
@@ -24,7 +27,13 @@ describe("Django REST framework / React quickstart app", () => {
             .get('textarea[name="measurements"]')
             .type(profile.measurements)
             .should("have.value", profile.measurements);
+            
         cy.get("form").submit();
+    });
+
+    it("should be able to see the table", () => {
+        cy.visit("/");
+        cy.get("tr").contains(`${profile.name}${profile.email}${profile.measurements}`);
     });
     // more tests here
   });
