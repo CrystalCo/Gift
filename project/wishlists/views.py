@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from wishlists.models import Wish
 from wishlists.serializers import WishSerializer
 from rest_framework import generics
 

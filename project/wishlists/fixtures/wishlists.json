@@ -1,0 +1,20 @@
+[
+    {
+        "model": "wishlists.wish",
+        "pk": 1,
+        "fields": {
+            "productName": "Ariel Crown in Black",
+            "price": "13.00",
+            "brand": "FlowerChild Revolution"
+        }
+    },
+    {
+        "model": "wishlists.wish",
+        "pk": 2,
+        "fields": {
+            "productName": "Ariel Crown in Pink",
+            "price": "13.00",
+            "brand": "FlowerChild Revolution"
+        }
+    }
+]
