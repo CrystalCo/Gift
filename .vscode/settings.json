@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/crystalcontreras/.local/share/virtualenvs/giftDjangoReact-SqaWnsgD/bin/python"
+    "python.pythonPath": "/Users/crystalcontreras/.local/share/virtualenvs/giftDjangoReact-SqaWnsgD/bin/python",
+    "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
 }

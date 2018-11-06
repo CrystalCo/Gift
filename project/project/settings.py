@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'profiles',
     'rest_framework',
     'frontend',
-    'lists',
+    'wishlists',
 ]
 
 MIDDLEWARE = [
