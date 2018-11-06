@@ -10,6 +10,11 @@ const App = () => (
             render={data => <Table data={data} />} 
         />
         <Form endpoint="api/profile/" />
+
+        <DataProvider endpoint="api/wish/" 
+            render={data => <Table data={data} />} 
+        />
+        <Form endpoint="api/wish/" />
     </React.Fragment>
 );
 

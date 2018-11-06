@@ -1,10 +1,10 @@
 // import { isRegExp } from "util";
 
 describe("Django REST framework / React quickstart app", () => {
-    const profile = {
-        name: "Armin",
-        email: "some-email@gmail.com",
-        measurements: "5ft 4in"
+    const wish = {
+        productName: "Ariel Crown in Black",
+        price: "13.00",
+        brand: "FlowerChild Revolution"
     };
 
     before(() => {
@@ -16,24 +16,24 @@ describe("Django REST framework / React quickstart app", () => {
         cy.visit("/");
 
         cy
-            .get('input[name="name"]')
-            .type(profile.name)
-            .should("have.value", profile.name);
+            .get('input[name="productName"]')
+            .type(wish.name)
+            .should("have.value", wish.name);
         cy
-            .get('input[name="email"]')
-            .type(profile.email)
-            .should("have.value", profile.email);
+            .get('input[name="price"]')
+            .type(wish.price)
+            .should("have.value", wish.price);
         cy
-            .get('textarea[name="measurements"]')
-            .type(profile.measurements)
-            .should("have.value", profile.measurements);
+            .get('textarea[name="brand"]')
+            .type(wish.brand)
+            .should("have.value", wish.brand);
             
         cy.get("form").submit();
     });
 
     it("should be able to see the table", () => {
         cy.visit("/");
-        cy.get("tr").contains(`${profile.name}${profile.email}${profile.measurements}`);
+        cy.get("tr").contains(`${wish.name}${wish.price}${wish.brand}`);
     });
     // more tests here
   });
