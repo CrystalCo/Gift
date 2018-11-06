@@ -17,8 +17,8 @@ describe("Django REST framework / React quickstart app", () => {
 
         cy
             .get('input[name="productName"]')
-            .type(wish.name)
-            .should("have.value", wish.name);
+            .type(wish.productName)
+            .should("have.value", wish.productName);
         cy
             .get('input[name="price"]')
             .type(wish.price)
@@ -33,7 +33,7 @@ describe("Django REST framework / React quickstart app", () => {
 
     it("should be able to see the table", () => {
         cy.visit("/");
-        cy.get("tr").contains(`${wish.name}${wish.price}${wish.brand}`);
+        cy.get("tr").contains(`${wish.productName}${wish.price}${wish.brand}`);
     });
     // more tests here
   });
