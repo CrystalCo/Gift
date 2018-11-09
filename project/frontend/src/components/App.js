@@ -15,7 +15,7 @@ const App = () => (
         <DataProvider endpoint="api/wish/" 
             render={data => <Table data={data} />} 
         />
-        <WishListForm endpoint="api/wish/" />
+        <Form endpoint="api/wish/" />
     </React.Fragment>
 );
 
