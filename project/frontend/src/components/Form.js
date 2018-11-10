@@ -33,7 +33,7 @@ class Form extends Component {
         const { name, email, measurements } = this.state;
         return (
             <div className="column">
-                <form onSubmit={this.handleSubmit}>
+                <form id="profileForm" onSubmit={this.handleSubmit}>
                     <div className="field">
                         <label className="label">Name</label>
                         <div className="control">

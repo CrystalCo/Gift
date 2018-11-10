@@ -33,7 +33,7 @@ class WishListForm extends Component {
         const { productName, price, brand } = this.state;
         return (
             <div className="column">
-                <form onSubmit={this.handleSubmit}>
+                <form id="wishForm" onSubmit={this.handleSubmit}>
                     <div className="field">
                         <label className="label">Product Name</label>
                         <div className="control">
