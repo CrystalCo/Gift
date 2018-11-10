@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import DataProvider from "./DataProvider";
-import Table from "./Table";
-import Form from "./Form";
-import WishListForm from "./WishListForm";
+import DataProvider from "../DataProvider/DataProvider";
+import Table from "../Table/Table";
+import Form from "../Form/Form";
+import WishListForm from "../WishListForm/WishListForm";
 
 const App = () => (
     <React.Fragment>
